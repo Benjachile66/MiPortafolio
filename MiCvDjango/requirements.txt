@@ -39,7 +39,6 @@ trio==0.22.0
 trio-websocket==0.10.2
 typing-extensions==4.5.0
 urllib3==1.25.11
-view==0.1
 views==0.3
 websocket-client==0.56.0
 wsproto==1.2.0
