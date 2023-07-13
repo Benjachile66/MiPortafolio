@@ -1,0 +1,361 @@
+:root {
+  --color-primary: #130D25 ; /* Definición de la variable color-primary */
+  --margin-top: 65px; /* Definición de la variable margin-top */
+  --color-iconos: #03a9f4 ;
+}
+
+/*Footer/
+/* Estilos del footer */
+footer {
+  background-color: var(--color-primary); /* Color de fondo del footer */
+  color: white; /* Color del texto del footer */
+}
+
+
+.row {
+	max-width: 100%;
+}
+
+.footer-list li a {
+  /*color: #A9B8D5; /* Color de base para los íconos */
+  color: #FAF9FF; /* Color de base para los íconos */
+}
+
+.footer-list li a:hover {
+
+  color: #959595; /* Color más oscuro cuando el mouse está encima */
+
+}
+
+
+.main-content{
+	min-width: 800px
+}
+
+.container{
+	position:relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 100pc;
+	background: #FFFFFF;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: 50px;
+	padding: 0;
+	min-width: 1200px
+}
+
+.container .izquierda{
+	position: relative;
+	background-color: var(--color-primary);
+	padding: 40px;
+}	
+
+.container .izquierda a {
+	text-decoration: none;
+}	
+
+.ProfileText{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.ProfileText h2{
+	color: #FFFFFF;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600; 
+	line-height: 1.4em;
+}
+
+.ProfileText h2 span{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.ProfileText .ImgBx{
+	position: relative;
+	width:200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+
+.ProfileText .ImgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.infoContacto{
+	padding-top: 40px;
+}
+
+.titulo{
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+
+.infoContacto ul{
+	position: relative;
+	padding: 0;
+}
+
+.infoContacto li{
+	position: relative;	
+	white-space: nowrap;
+}
+
+.infoContacto ul li{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.infoContacto ul li .icon{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color:#03a9f4; 
+}
+
+.infoContacto ul li span{
+	color: #FFFFFF;
+	font-weight: 300;
+}
+
+.infoContacto .text{
+  white-space: nowrap; /* Evita que el texto se envuelva */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto recortado */
+}
+
+.textomail {
+	font-size: small;
+}
+
+.infoContacto ul li span:hover{
+  color: #959595; /* Color más oscuro cuando el mouse está encima */
+}
+
+.Educacion {
+	padding-top: 15px;
+}
+
+.Educacion ul{
+	padding: 0;
+	list-style: none;
+}
+
+.Educacion li{
+	margin-bottom: 15px;
+}
+.Educacion h5{
+	color: var(--color-iconos);
+	font-weight: 500;
+}
+
+.Educacion h4:nth-child(2){
+	color: #FFFFFF;
+	font-weight: 500;
+}
+
+.Educacion h4{
+	color: #FFFFFF;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.container .derecha {
+	position: relative;
+	background: #FFFFFF;
+	padding: 40px;
+}	
+
+.Educacion.Lenguaje{
+	color: #FFFFFF
+}
+
+.Educacion.Lenguaje .percent{
+	position:relative;
+	width: 100%;
+	height: 6px;
+	background: black;
+	display:block;
+	margin-top: 5px;
+}
+
+.anchoBarra
+{
+
+	position: relative;
+	top: 0;
+	left: 0 ;
+	height: 100%;
+	background: var(--color-iconos);
+	display: block;
+	margin-top: 5px;
+}
+
+.Education.Lenguaje .text{
+	color: #FFFFFF;
+	font-weight: 300;
+}
+
+.container .derecha{
+	position: relative;
+	background: #FFFFFF;
+	padding: 40px;
+}
+
+.about{
+	margin-bottom: :50px;
+}
+
+.about:last-child{
+	margin-bottom: 0;
+}
+
+.title2{
+	color:var(--color-primary);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+p{
+	color: #333;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+.about .box{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.about .box .year_company{
+	min-width: 150px;
+}
+
+.about .box .year_company h5{
+	color : #848c90;
+	font-weight: 600;
+}
+
+.about .box .text h4{
+	color: #2a7da2;
+	font-size: 16px;
+}
+
+.skills .box{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills .box h4{
+	text-transform: uppercase;
+	color:#848c99;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.skills .box .percent{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0
+}
+
+.skills .box .percent div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+
+}
+
+.interest .title2{
+	padding-top: 10px;
+}
+
+.interest ul{
+	display:grid;
+	grid-template-columns: repeat(3,1fr);
+	padding-left: 0;
+}
+
+.interest ul li{
+	list-style: none;
+	color: #333;
+	font-weight: 500;
+	margin: 10px 0;
+	padding-left: 10px;
+}
+
+.interest ul li .fa{
+	var(--color-iconos);
+	font-size: 18px;
+	width: 20px; 
+}
+
+@media (max-width: 1000px){
+	.main-content{
+		min-width: 0px; /*Esto no puede bajar de 800 px , algun lugar lo dejaste asi */
+		max-width: 1000px; /* Establece el ancho máximo del contenedor a 1000px */
+
+	}
+	.container
+	{
+		margin: 15px;
+		grid-template-columns: repeat(1,1fr);
+		position:relative;
+		width: fit-content;
+		min-height: 100pc;
+		background: #FFFFFF;
+		display: grid;
+		padding: 0;
+		max-width: 1000px;
+		min-width: 0px;
+		border:0px;
+		box-sizing: content-box;
+	}
+
+	.interest ul{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+@media (max-width: 600px){
+	.container
+	{
+		margin: 10px;
+		grid-template-columns: repeat(1,1fr);
+	}
+	.interest ul{
+		grid-template-columns: repeat(5,1fr);
+	}
+}
+

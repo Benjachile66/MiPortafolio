@@ -1,0 +1,42 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'CSS/ListadoProtectos.css' %}">
+
+<div class="containerProyectos">
+  
+  <div class="proyecto">
+  	<a href="{% url 'Mesa_de_ayuda' %}">
+    <img src="{% static 'proyecto1.png' %}" alt="Proyecto 1">
+    <h3>Mesa de ayuda</h3>
+	</a>
+    <p>Bot de Automatización para la Gestión de Pedidos de Soporte, es una herramienta desarrollada en Django que optimiza y agiliza el proceso de atención a los requerimientos de los clientes en el servicio de Mesa de Ayuda.</p>
+  </div>
+
+  <div class="proyecto">
+    <img src="{% static 'proyecto2.jpg' %}" alt="Proyecto 2">
+    <h3>Reporte logro competencia</h3>
+    <p>Es un reporte para evaluar y medir el nivel de logro de competencias definidas por cada universidad. Se basa en las notas de los alumnos y muestra un porcentaje de logro de competencias.</p>
+  </div>
+
+  <div class="proyecto">
+    <img src="{% static 'proyecto3.jpg' %}" alt="Proyecto 3">
+    <h3>Reporte Bamboo</h3>
+    <p>Reporte conectado a la base de datos de Bamboo para la visualizacion de la version de cada ambiente ademas cuenta con visualizaciones de los despliegues de cada uno asi como tambien los tiempos y los % de falla en los despliegues.</p>
+  </div>
+
+  <div class="proyecto">
+    <img src="{% static 'proyecto4.jpg' %}" alt="Proyecto 4">
+    <h3>Reporte Soporte</h3>
+    <p>(!)Bot de Automatización para la Gestión de Pedidos de Soporte, es una herramienta desarrollada en Django que optimiza y agiliza el proceso de atención a los requerimientos de los clientes en el servicio de Mesa de Ayuda.</p>
+  </div>
+
+  <div class="proyecto">
+    <img src="{% static 'proyecto5.jpg' %}" alt="Proyecto 5">
+    <h3>Mi pagina web</h3>
+    <p>Pagina web creada en Django , aca subire todos mis proyectos y dare un seguimiento a mi vida profesional.</p>
+  </div>
+
+</div>
+{% endblock %}

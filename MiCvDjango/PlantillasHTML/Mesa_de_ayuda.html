@@ -1,0 +1,58 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'CSS/ProyectoDetalle.css' %}">
+
+<div class="containerProyectos">
+  <div class="proyecto">
+  <h1 class="titulo-proyecto">Mesa de Ayuda</h1>
+  <h2 class="subtitulo">Descripción del Proyecto</h2>
+    <p>
+      Este proyecto surge como solución a la necesidad de gestionar de manera óptima y ordenada los problemas y requerimientos que puedan surgir en los diferentes productos de la empresa. Inicialmente, la comunicación para notificar errores o bugs se realizaba a través de correos electrónicos, lo que resultaba en un desorden en la priorización y dificultaba la comunicación con los clientes, dependiendo únicamente de la persona encargada de gestionar esos correos.
+    </p>
+    <p>
+      Con el objetivo de mejorar esta situación, se implementó una Mesa de Ayuda utilizando JIRA como gestor de proyectos. Esta solución permitió que los clientes pudieran crear incidencias directamente en JIRA, centralizando y ordenando los requerimientos.
+    </p>
+    <h2 class="subtitulo">Automatización y Gestión de Tickets</h2>
+    
+    <div class="parrafo-con-imagen">
+      <div class = "parrafo">
+      <p>
+      Para optimizar el proceso de atención y comunicación con los clientes, se desarrolló un bot que automatizó diversas tareas en la gestión de los tickets de soporte. El bot se encargaba de notificar en el canal correspondiente de Microsoft Teams cuando se creaba una nueva incidencia, clonaba el ticket para que pudiera ser trabajado internamente y notificaba al cliente sobre los cambios de estado de la tarea.
+      </p>
+      </div>
+      <div class="imagen-miniatura">
+          <img src="{% static 'proyecto1.png' %}" alt="Proyecto 1">
+          <div class="descripcion-miniatura">
+            <p>Notificacion en teams para cada incidencia</p>
+          </div>
+      </div>
+    </div>
+    <p>
+      Además, el bot permitía la comunicación con el cliente dentro del ticket clon mediante comandos especiales, que clonaban los comentarios relevantes para mantener una comunicación efectiva. Los comentarios internos y los comandos no eran visibles para el cliente, lo que garantizaba la privacidad de las conversaciones internas. También se incluyeron respuestas automáticas al cerrar un ticket, brindando al cliente la opción de aceptar el cierre o reabrir la incidencia.
+    </p>
+    <h2 class="subtitulo">Tiempo de Implementación</h2>
+    <p>
+      El proyecto se desarrolló de manera rápida y eficiente, con una primera versión implementada en menos de 3 meses. Durante este tiempo, se llevaron a cabo reuniones y presentaciones para informar a la empresa sobre el enfoque y los beneficios de la Mesa de Ayuda. A medida que avanzaba el proyecto, se realizaron mejoras adicionales, como la implementación de un registro de actividades del bot, y se adaptaron a nuevas necesidades y formas de operar en el soporte de la empresa.
+    </p>
+    <h2 class="subtitulo">Herramientas Utilizadas</h2>
+    <p>
+      Para la implementación del bot de la Mesa de Ayuda, se utilizó Django como la principal herramienta de desarrollo, respaldado por el lenguaje de programación Python. El bot se alojó en un servidor dedicado para garantizar su disponibilidad continua. Además, se aprovechó la API de JIRA para controlar la gestión de los tickets y los comentarios desde el bot, y se utilizó la API de Microsoft Teams para generar publicaciones en los diferentes canales al llegar una nueva incidencia.
+    </p>
+    <h2 class="subtitulo">Estadísticas y Reportes</h2>
+    <p>
+      Gracias a la implementación de la Mesa de Ayuda y la automatización de los procesos, se logró una mejor gestión del soporte en la empresa. Los datos recopilados permitieron generar reportes de soporte que incluían información relevante, como los tiempos de resolución por producto y otras métricas de desempeño.
+    </p>
+    <h2 class="subtitulo">Conclusión</h2>
+    <p>
+      Participar en el desarrollo de la Mesa de Ayuda fue un desafío profesional en el que me sentí muy satisfecho de haber sido uno de los principales creadores. Es importante mencionar que este proyecto fue el resultado de un trabajo en equipo y de la colaboración con el personal de soporte técnico, quienes brindaron valiosos aportes y participaron en reuniones para definir los requisitos y la funcionalidad del sistema. Aunque era uno de mis primeros desafíos profesionales y contaba con poca experiencia, logré sacar adelante este proyecto de manera exitosa.
+    </p>
+  </div>
+  </div>
+
+
+
+
+</div>
+{% endblock %}
