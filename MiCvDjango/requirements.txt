@@ -28,7 +28,6 @@ pymsteams==0.1.12
 PySocks==1.7.1
 pytz==2019.2
 query-string==2019.4.13
-request==2019.4.13
 requests==2.22.0
 requests-oauthlib==1.2.0
 requests-toolbelt==0.9.1
