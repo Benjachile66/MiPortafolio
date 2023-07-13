@@ -14,7 +14,6 @@ django-iprestrict==1.7.0
 djangorestframework==3.10.2
 Events==0.3
 h11==0.14.0
-idna==2.8
 post==2019.4.13
 psycopg2==2.8.3
 public==2019.4.13
