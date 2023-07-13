@@ -9,7 +9,6 @@ chardet==3.0.4
 cryptography==2.7
 defusedxml==0.6.0
 Django==3.2.19
-django-bootstrap4==23.1
 post==2019.4.13
 psycopg2==2.8.3
 public==2019.4.13
