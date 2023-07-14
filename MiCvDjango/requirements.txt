@@ -1,3 +1,6 @@
-﻿asgiref==3.7.2
-asn1crypto==0.24.0
-async-generator==1.10
+Django==3.2.19
+django-bootstrap4==23.1
+djangorestframework==3.10.2
+views==0.3
+asgiref==3.7.2
+
