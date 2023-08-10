@@ -21,7 +21,7 @@
 		grid-template-columns: repeat(1,1fr);
 		position:relative;
 		width: fit-content;
-		min-height: 49pc;
+		min-height: 120pc;
 		background: #FFFFFF;
 		display: grid;
 		padding: 0;

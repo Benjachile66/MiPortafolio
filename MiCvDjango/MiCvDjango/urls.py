@@ -24,5 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('' , views.home , name = 'home' ),
     path('proyectos/', views.proyectos, name='Proyectos'),
-    path('proyectos/Mesa_de_ayuda', views.Mesa_de_ayuda, name = 'Mesa_de_ayuda')
+    path('proyectos/Mesa_de_ayuda', views.Mesa_de_ayuda, name = 'Mesa_de_ayuda'),
+    path('cv/', views.cv, name='cv'),
+    path('<str:language_code>/', views.switch_language, name='switch_language')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,157 +1,26 @@
 {% extends 'Base.html' %}
 {% load static %}
+
+
+{% block inicio %} Inicio {% endblock %}
+{% block proyectos %} Proyectos {% endblock %}
 {% block content %}
 
-<div class="container">	
-	<div class="izquierda">
-		<div class="ProfileText"> 
-			<div class="ImgBx">
-				<img src="{% static 'img.jpg' %}">
-			</div>
-			<h2> Benjamin Jimenez <br><span> Analista Desarrollador </span> </h2>
-		</div>
-		<div class="infoContacto">
-			<h3 class ="titulo"> Contacto </h3>
-			<ul>
-				<li>
-					<a href="tel:+56997258452" target="_blank">
-					<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-					<span class="text">+569 97258452 </span>
-				</li>
-				<li>
-					<a href="mailto:benjamin.jimenez.66@gmail.com" target="_blank">
-					<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-					<span class="textomail">benjamin.jimenez.66@gmail.com</span>
-				    </a>
-				</li>
-				<li>
-					<span class="icon"><span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-					</span>
-					<span class="text">wwww.mywebsite.com</span>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/benjamin-jimenez-9886971a7/" target="_blank">
-					<span class="icon"><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-				    </span>
-					<span class="text">https://www.linkedin.com/me</span></a>
-				</li>
-				<li>
-					<a href="https://goo.gl/maps/p7FRwd91vJkrx5VR8" target="_blank">
-					<span class="icon"><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span></span>
-					<span class="text"> Chile </span></a>
-				</li>
+<link rel="stylesheet" href="{% static 'CSS/Inicio.css' %}">
 
-		</div>
+<body id="bckground">
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Benjamin Jimenez</h1>
+      <p><span class="typed" data-typed-items="Analista., Desarrollador., Fotografia., Rapero."></span></p>
+    </div>
+  </section>
+</body>
 
 
-		<div class="Educacion">
-			<h3 class ="titulo"> Trabajos y Estudios </h3>
-			<ul>
-				<li>
-					<h5> 2015 - 2019 </h5>
-					<h4> Ingeniero civil industrial Mencion TI </h4>
-					<h4> Universidad Adolfo Ibañez </h4>
-				</li>
-				<li>
-					<h5> 2019 - 2022 </h5>
-					<h4> Consultor tecnico desarrollador </h4>
-					<h4> u-planner </h4>
-				</li>			
-		</div>
-		<div class="Educacion Lenguaje">
-			<h3 class ="titulo"> Lenguajes </h3>
-			<ul>
-				<li>
-					<span class="text"> Español </span>
-					<span class="percent">
-					<div class="anchoBarra" style="width: 100%;"></div>
-					</span>
-				<li>
-					<span class="Ingles"> Ingles </span>
-					<span class="percent">
-					<div class="anchoBarra" style="width: 75%;"></div>
-					</span>
-				</li>
-			</ul>
-
-		</div>
-
-
-
-	</div>
-	<div class="derecha">
-		<div class="about">
-			<h2 class="title2">Perfil</h2>
-			<p>Todo está en constante cambio, se necesita un enfoque flexible para afrontar problemas con soluciones que cambian constantemente. Creo que el área tecnológica es muy interesante y que cada vez irá tomando más peso. Poder aprender y dominar las herramientas para enfrentar estos problemas es algo que me interesa. Soy muy flexible con mis conocimientos y siempre estoy dispuesto a aprender más. Creo que los proyectos que he llevado a cabo han tenido buenos resultados y en el futuro me gustaría afrontar más desafíos.</p>
-		</div>
-		<div class="about">
-			<h2 class="title2">Experiencia </h2>
-			<div class="box">
-				<div class="year_company">
-					<h5> 2019 - 2022 </h5>
-					<h5> uplanner </h5>
-				</div>
-				<div class="text">
-					<h4>Consultor tecnico desarrollador</h4>
-					<div class="paragraph">
-	<p>Encargado de apoyar el area de consultoria con proyectos de tecnologia. </p>   
-  					</div>
-  				</div>
-  			</div>
-  <h6>Mesa de Ayuda Autónoma</h6>
-  <p>Desarrollé y programé una mesa de ayuda autónoma utilizando Python y Django.</p>
-
-		<div class="paragraph">
-  		<h6>Reportes en Power BI</h6>
-  		<p>Creé y diseñé reportes en Power BI para la toma de decisiones en la empresa y para productos específicos de la empresa.</p>
-		</div>
-	</div>
-		<div class="about skills">
-			<h2 class="title2"> Habilidades </h2>
-			<div class="box">
-				<h4> Power-bi </h4>
-				<div class="percent">
-					<div style="width: 95%;"></div>
-				</div>
-			</div>
-			<div class="box">
-				<h4> SQL </h4>
-				<div class="percent">
-					<div style="width: 90%;"></div>
-				</div>
-			</div>
-			<div class="box">
-				<h4> python </h4>
-				<div class="percent">
-					<div style="width: 80%;"></div>
-				</div>
-			</div>
-			<div class="box">
-				<h4> Html </h4>
-				<div class="percent">
-					<div style="width: 55%;"></div>
-				</div>
-			</div>
-			<div class="box">
-				<h4> CSS </h4>
-				<div class="percent">
-					<div style="width: 55%;"></div>
-				</div>
-			</div>
-
-		</div>
-		<div class="about interest">  
-			<h2 class="title2"> Hobbies </h2>
-			<ul>
-				<li><i class="fa fa-music" aria-hidden="true"></i>Musica</li>
-				<li><i class="fa fa-gamepad" aria-hidden="true"></i>Videjuegos</li>
-				<li><i class="fa fa-camera" aria-hidden="true"></i>Fotografia</li>
-			</ul>
-		</div>
-	</div>
-	</div>
-	</div>
-	</div>
+<script src="{% static 'js/librerias/typed/typed.umd.js' %}"></script>
+<script src="{% static 'js/Ocupadas/typedMio.js' %}"></script>
 
 {% endblock %}
 

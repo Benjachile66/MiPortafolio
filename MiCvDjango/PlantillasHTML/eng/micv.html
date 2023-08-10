@@ -1,0 +1,160 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block inicio %} Home {% endblock %}
+{% block proyectos %} Proyects {% endblock %}
+
+{% block content %}
+
+<div class="container">	
+	<div class="izquierda">
+		<div class="ProfileText"> 
+			<div class="ImgBx">
+				<img src="{% static 'img.jpg' %}">
+			</div>
+			<h2> Benjamin Jimenez <br><span> Developer Analyst </span> </h2>
+		</div>
+		<div class="infoContacto">
+			<h3 class ="titulo"> Contact </h3>
+			<ul>
+				<li>
+					<a href="tel:+56997258452" target="_blank">
+					<span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+					<span class="text">+569 97258452 </span>
+				</a>
+				</li>
+				<li>
+					<a href="mailto:benjamin.jimenez.66@gmail.com" target="_blank">
+					<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+					<span class="textomail">benjamin.jimenez.66@gmail.com</span>
+				    </a>
+				</li>
+				<li>
+					<span class="icon"><span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+					</span>
+					<span class="text">wwww.mywebsite.com</span>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/benjamin-jimenez-9886971a7/" target="_blank">
+					<span class="icon"><span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+				    </span>
+					<span class="text">https://www.linkedin.com/me</span></a>
+				</li>
+				<li>
+					<a href="https://goo.gl/maps/p7FRwd91vJkrx5VR8" target="_blank">
+					<span class="icon"><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span></span>
+					<span class="text"> Chile </span></a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="Educacion">
+			<h3 class ="titulo"> Work and Studies </h3>
+			<ul>
+				<li>
+					<h5> 2015 - 2019 </h5>
+					<h4> Industrial Civil Engineer with IT Mention </h4>
+					<h4> Adolfo Ibañez University </h4>
+				</li>
+				<li>
+					<h5> 2019 - 2022 </h5>
+					<h4> Technical Development Consultant </h4>
+					<h4> u-planner </h4>
+				</li>			
+			</ul>
+		</div>
+		<div class="Educacion Lenguaje">
+			<h3 class ="titulo"> Languages </h3>
+			<ul>
+				<li>
+					<span class="text"> Spanish </span>
+					<span class="percent">
+					<div class="anchoBarra" style="width: 100%;"></div>
+					</span>
+				<li>
+					<span class="Ingles"> English </span>
+					<span class="percent">
+					<div class="anchoBarra" style="width: 75%;"></div>
+					</span>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+	<div class="derecha">
+		<div class="about">
+			<h2 class="title2">Profile</h2>
+			<p>Everything is constantly changing, requiring a flexible approach to tackle issues with ever-evolving solutions. I believe the technological field is highly intriguing and will continue to gain significance. Learning and mastering the tools to address these problems is something I'm interested in. I'm adaptable in my knowledge and always eager to learn more. I believe the projects I've undertaken have produced good results and in the future, I'd like to take on more challenges.</p>
+		</div>
+		<div class="about">
+			<h2 class="title2">Experience </h2>
+			<div class="box">
+				<div class="year_company">
+					<h5> 2019 - 2022 </h5>
+					<h5> uplanner </h5>
+				</div>
+				<div class="text">
+					<h4>Technical Development Consultant</h4>
+					<div class="paragraph">
+						<p>Responsible for supporting the consulting area with technology projects.</p>   
+  					</div>
+  				</div>
+  			</div>
+  			<div class="paragraph">
+  				<h6>Autonomous Help Desk</h6>
+  				<p>I developed and programmed an autonomous help desk using Python and Django.</p>
+				</div>
+				<div class="paragraph">
+  				<h6>Power BI Reports</h6>
+  				<p>Created and designed Power BI reports for decision-making within the company and for specific company products.</p>
+				</div>
+			</div>
+			<div class="about skills">
+				<h2 class="title2">Skills</h2>
+				<div class="box">
+					<h4> Power-bi </h4>
+					<div class="percent">
+						<div style="width: 95%;"></div>
+					</div>
+				</div>
+				<div class="box">
+					<h4> SQL </h4>
+					<div class="percent">
+						<div style="width: 90%;"></div>
+					</div>
+				</div>
+				<div class="box">
+					<h4> python </h4>
+					<div class="percent">
+						<div style="width: 80%;"></div>
+					</div>
+				</div>
+				<div class="box">
+					<h4> Html </h4>
+					<div class="percent">
+						<div style="width: 55%;"></div>
+					</div>
+				</div>
+				<div class="box">
+					<h4> CSS </h4>
+					<div class="percent">
+						<div style="width: 55%;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="about interest">  
+				<h2 class="title2"> Hobbies </h2>
+				<ul>
+					<li><i class="fa fa-music" aria-hidden="true"></i>Music</li>
+					<li><i class="fa fa-gamepad" aria-hidden="true"></i>Video Games</li>
+					<li><i class="fa fa-camera" aria-hidden="true"></i>Photography</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}

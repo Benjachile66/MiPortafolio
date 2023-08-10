@@ -1,0 +1,123 @@
+/* Inicio.css */
+
+/* Estilo para el texto del título */
+h1 {
+  color: white;
+}
+
+/* Estilo para el texto del script typed */
+.typed {
+  color: #5F5F5F; /* Rojo fuerte (código hexadecimal para el color rojo) */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Estilo para la sección de inicio */
+#hero {
+  /* Establecemos el alto mínimo para asegurarnos de que ocupará al menos toda la altura de la ventana visible */
+  min-height: 80vh;
+
+  /* Flexbox para centrar verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Fondo opcional para que puedas ver el área ocupada por la sección */
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+/* Estilo para el contenido de la sección */
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("img/background1.jpg"), url("img/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeBackground 10s linear infinite;
+  background-color: black;
+}
+
+/* Estilos específicos para background1 */
+body.background-1 {
+
+  .typed {
+  color: white; /* Rojo fuerte (código hexadecimal para el color rojo) */
+  }
+  .hero-container {
+  /* Máximo ancho para el contenido */
+  max-width: 150%;
+
+  /* Añadimos un poco de relleno para dar espacio al contenido */
+  padding: 20px;
+
+  /* Agregamos el fondo opcional solo al contenido en lugar de toda la sección */
+  /*background-color: black*/
+  padding-left: 40%;
+  padding-top: 400px;
+}
+  /* Coloca aquí los estilos específicos para background1 */
+}
+
+/* Estilos específicos para background2 */
+body.background-2 {
+  
+  background-size:  cover ;
+  background-position: center bottom;
+
+  /* Coloca aquí los estilos específicos para background2 */
+    .typed {
+  color: #5F5F5F;
+  }
+
+  .hero-container {
+  /* Máximo ancho para el contenido */
+  max-width: 800px;
+
+  /* Añadimos un poco de relleno para dar espacio al contenido */
+  padding: 20px;
+  padding-top: 150px;
+  
+  }
+}
+
+@media (max-width: 1000px){
+
+  body.background-1 {
+    max-width: 250%;
+  .hero-container {
+  padding-left: : 0;
+  }
+  }
+
+  
+}
+
+@media (max-width: 600px){
+
+  body.background-1 {
+
+  .typed {
+  color: white; /* Rojo fuerte (código hexadecimal para el color rojo) */
+  }
+  .hero-container {
+  /* Máximo ancho para el contenido */
+  max-width: 150%;
+
+  /* Añadimos un poco de relleno para dar espacio al contenido */
+  padding: 20px;
+
+  /* Agregamos el fondo opcional solo al contenido en lugar de toda la sección */
+  /*background-color: black*/
+  padding-left: 0%;
+  padding-top: 400px;
+}
+  /* Coloca aquí los estilos específicos para background1 */
+}
+}

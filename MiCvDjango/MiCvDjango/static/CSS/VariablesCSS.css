@@ -4,11 +4,69 @@
   --color-iconos: #03a9f4 ;
 }
 
+
+  /* Variables estilozas*/
+  /* Nav bar variables*/
+  nav{
+    background-color: var(--color-primary);
+    padding-top: 0px;
+    padding-bottom : 0px;
+  }
+
+  .language-buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.language-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #A1A1A1;
+    text-decoration: none;
+}
+
+.language-active {
+    background-color: yellow; /* Cambia esto al color que desees */
+}
+
+.language-button.active {
+    font-weight: bold;  /* Fuente en negrita para el botón seleccionado */
+    color:#fff ;  /* Cambia esto al color deseado */
+}
+
+
+/* FIN NAVBAR */
+
+/* Variables body */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black; /*Bckground color black */
+  }
+
+  .main-content {
+    flex-grow: 1;
+    padding-top: 60px; /* Ajusta el espacio superior para el encabezado */
+  }
+
+
 /*Footer/
 /* Estilos del footer */
 footer {
   background-color: var(--color-primary); /* Color de fondo del footer */
   color: white; /* Color del texto del footer */
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
 }
 
 
@@ -321,6 +379,30 @@ p{
 	width: 20px; 
 }
 
+.navbar-nav-leng.ml-auto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.navbar-nav-leng.ml-auto {
+    	display: flex; /* Aplica flex a la lista */
+    	align-items: center; /* Centra verticalmente los elementos en la fila */
+    	flex-direction : row ;
+    	list-style: none;
+    	margin-top: 15px
+    	padding-left: 0px;
+    }
+
+/* Estilos para la barra de navegación */
+.navbar-custom {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
 @media (max-width: 1000px){
 	.main-content{
 		min-width: 0px; /*Esto no puede bajar de 800 px , algun lugar lo dejaste asi */
@@ -346,6 +428,24 @@ p{
 	.interest ul{
 		grid-template-columns: repeat(2,1fr);
 	}
+
+	.navbar-nav.ml-auto {
+    	display: flex; /* Aplica flex a la lista */
+    	align-items: left; /* Centra verticalmente los elementos en la fila */
+    	flex-direction : column ;
+    }
+
+
+    .language-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50%;
+    }
+
+    .language-button {
+        margin: 0 5px;
+    }
 }
 
 @media (max-width: 600px){
@@ -357,5 +457,11 @@ p{
 	.interest ul{
 		grid-template-columns: repeat(5,1fr);
 	}
+	.language-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2%;
+    }
 }
 

@@ -1,0 +1,26 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+
+{% block inicio %} Home {% endblock %}
+{% block proyectos %} Proyects {% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'CSS/Inicio.css' %}">
+
+<body id="bckground">
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Benjamin Jimenez</h1>
+      <p><span class="typed" data-typed-items="Analyst., Developer., Photography., Rapper."></span></p>
+    </div>
+  </section>
+</body>
+
+
+<script src="{% static 'js/librerias/typed/typed.umd.js' %}"></script>
+<script src="{% static 'js/Ocupadas/typedMio.js' %}"></script>
+
+{% endblock %}
+

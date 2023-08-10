@@ -1,0 +1,39 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block inicio %} Home {% endblock %}
+{% block proyectos %} Proyects {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'CSS/ListadoProtectos.css' %}">
+<div class="containerProyectos">
+  <div class="proyecto">
+    <a href="{% url 'Mesa_de_ayuda' %}">
+    <img src="{% static 'proyecto1.png' %}" alt="Project 1">
+    <h3>Help Desk</h3>
+  </a>
+    <p>Automation Bot for Support Ticket Management, a Django-based tool that optimizes and streamlines the process of handling customer requests in the Help Desk service.</p>
+  </div>
+  <div class="proyecto">
+    <img src="{% static 'proyecto2.jpg' %}" alt="Project 2">
+    <h3>Competency Achievement Report</h3>
+    <p>This report evaluates and measures the level of achievement of competencies defined by each university. It is based on student grades and displays a percentage of competency achievement.</p>
+  </div>
+  <div class="proyecto">
+    <img src="{% static 'proyecto3.jpg' %}" alt="Project 3">
+    <h3>Bamboo Report</h3>
+    <p>Report connected to the Bamboo database for visualization of environment versions. It also includes deployment visualizations for each environment, as well as deployment times and failure percentages.</p>
+  </div>
+  <div class="proyecto">
+    <img src="{% static 'proyecto4.jpg' %}" alt="Project 4">
+    <h3>Support Report</h3>
+    <p>(!) Automation Bot for Support Ticket Management, a Django-based tool that optimizes and streamlines the process of handling customer requests in the Help Desk service.</p>
+  </div>
+  <div class="proyecto">
+    <img src="{% static 'proyecto5.jpg' %}" alt="Project 5">
+    <h3>My Website</h3>
+    <p>Website created in Django. Here, I will showcase all my projects and track my professional journey.</p>
+  </div>
+</div>
+{% endblock %}

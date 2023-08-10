@@ -1,0 +1,58 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block inicio %} Home {% endblock %}
+{% block proyectos %} Proyects {% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'CSS/ProyectoDetalle.css' %}">
+
+<div class="containerProyectos">
+  <div class="proyecto">
+    <h1 class="titulo-proyecto">Help Desk</h1>
+    <h2 class="subtitulo">Project Description</h2>
+    <p>
+      This project emerges as a solution to efficiently and orderly manage issues and requirements that may arise in the company's different products. Initially, communication to report errors or bugs was done through emails, which resulted in a lack of prioritization and complicated communication with clients, depending solely on the person in charge of managing those emails.
+    </p>
+    <p>
+      To improve this situation, a Help Desk was implemented using JIRA as a project manager. This solution allowed clients to create incidents directly in JIRA, centralizing and ordering requirements.
+    </p>
+    <h2 class="subtitulo">Automation and Ticket Management</h2>
+    
+    <div class="parrafo-con-imagen">
+      <div class = "parrafo">
+        <p>
+          To optimize the support and communication process with clients, a bot was developed to automate various tasks in support ticket management. The bot was responsible for notifying the appropriate Microsoft Teams channel when a new incident was created, cloning the ticket for internal work, and notifying the client about changes in task status.
+        </p>
+      </div>
+      <div class="imagen-miniatura">
+          <img src="{% static 'proyecto1.png' %}" alt="Proyecto 1">
+          <div class="descripcion-miniatura">
+            <p>Teams notification for each incident</p>
+          </div>
+      </div>
+    </div>
+    <p>
+      Additionally, the bot allowed communication with the client within the cloned ticket through special commands that cloned relevant comments to maintain effective communication. Internal comments and commands were not visible to the client, ensuring the privacy of internal conversations. Automated responses upon ticket closure were also included, providing the client with the option to accept the closure or reopen the incident.
+    </p>
+    <h2 class="subtitulo">Implementation Time</h2>
+    <p>
+      The project was developed rapidly and efficiently, with an initial version implemented in less than 3 months. During this time, meetings and presentations were conducted to inform the company about the Help Desk's approach and benefits. As the project advanced, additional enhancements were made, including the implementation of a bot activity log, and adaptations to new needs and methods of operation within the company's support.
+    </p>
+    <h2 class="subtitulo">Tools Used</h2>
+    <p>
+      For the implementation of the Help Desk bot, Django was used as the primary development tool, supported by the Python programming language. The bot was hosted on a dedicated server to ensure continuous availability. Additionally, the JIRA API was leveraged to control ticket and comment management from the bot, and the Microsoft Teams API was used to generate posts in different channels upon the arrival of a new incident.
+    </p>
+    <h2 class="subtitulo">Statistics and Reports</h2>
+    <p>
+      Thanks to the Help Desk implementation and process automation, better support management was achieved within the company. The collected data allowed for generating support reports that included relevant information, such as resolution times per product and other performance metrics.
+    </p>
+    <h2 class="subtitulo">Conclusion</h2>
+    <p>
+      Participating in the development of the Help Desk was a professional challenge in which I felt very satisfied to be one of the main contributors. It's important to mention that this project was the result of teamwork and collaboration with technical support personnel, who provided valuable contributions and participated in meetings to define the requirements and functionality of the system. Despite being one of my early professional challenges with limited experience, I successfully carried out this project.
+    </p>
+  </div>
+</div>
+
+{% endblock %}
