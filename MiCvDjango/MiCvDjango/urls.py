@@ -19,6 +19,9 @@ from . import views
 from django.conf.urls.static import static
 from . import settings
 
+from django.urls import include
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +29,6 @@ urlpatterns = [
     path('proyectos/', views.proyectos, name='Proyectos'),
     path('proyectos/Mesa_de_ayuda', views.Mesa_de_ayuda, name = 'Mesa_de_ayuda'),
     path('cv/', views.cv, name='cv'),
-    path('<str:language_code>/', views.switch_language, name='switch_language')
+    path('<str:language_code>/', views.switch_language, name='switch_language'),
+    path('__debug__/', include('debug_toolbar.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
